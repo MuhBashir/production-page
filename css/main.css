@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+#header-img {
+    padding-left: 20px;
+    margin-left: 60px ; 
+    width: 200px;
+    height: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+
+}
+
+#nav-bar {
+    padding-right: 20px;
+    margin-right: 30px;
+    width: 40vw;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+.nav-link {
+    font-size: 20px;
+    text-decoration: none;
+}
+#wrapper{
+    margin-top: 150px;
+}
+
+h1{
+    text-align: center;
+}
+
+#form{
+    margin-top: 30px;
+}
+
+input[type=email], input[type=submit]{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 8px;
+    border-radius: 10px;
+}
+input[type=email]{
+    width: 250px;
+}
+
+input[type=submit]{
+    margin-top: 20px;
+}
+
+#Features{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.icon {
+    display: flex;
+    margin: 60px 30px;
+}
+
+span{
+    margin-right:70px;
+    font-size: 24px;
+}
+
+#Features p{
+    line-height: 1.2em;
+    font-size: 1.5em;
+
+}
+
+#center {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+}
+
+.price-wrapper {
+    border: 2px solid black;
+    margin: 60px 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Prices {
+    display: flex;
+}
+
+button{
+    align-self: center;
+    width: 100px;
+    margin-top: 70px;
+    background-color: yellowgreen;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+button:hover{
+    background-color: crimson;
+}
+
+h3 {
+    align-self: center;
+    font-size: 24px;
+}
+
+pre{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.price-wrapper p{
+    align-self: center;
+    font-size: 20px;
+}
+@media screen and (min-width: 991px){
+    ul{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+    ul{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px){
+    #header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul{
+        flex-direction: column;
+    }
+
+    #Prices {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 500px;
+
+    }
+
+    h1, #form {
+        margin-left: 60px;
+    } 
+
+}
+
+
+
+
+
+
+
+
